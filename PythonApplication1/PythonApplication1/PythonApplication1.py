@@ -1,3 +1,3 @@
-print("Welcome to Python" )
+print("Hi" )
 name = input("What is your name? ")
-print(name)
+print('Welcome to Python ' + name)
