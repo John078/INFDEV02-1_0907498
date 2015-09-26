@@ -14,17 +14,17 @@ if PickPlayer1 in ['rock', 'paper', 'scissors']:
     print("Player 2 picked",PickPlayer2)
 
     if (PickPlayer1=="rock") & (PickPlayer2=="paper"):
-        print("Paper wraps Rock \nPlayer 2 wins!")
+        print("Paper covers Rock \nPlayer 2 wins!")
     elif (PickPlayer1=="rock") & (PickPlayer2=="scissors"):
-        print("Rock beats scissors \nPlayer 1 wins!")
+        print("Rock crushes scissors \nPlayer 1 wins!")
     elif (PickPlayer1=="paper") & (PickPlayer2=="scissors"):
-        print("Scissors cut paper \nPlayer 2 wins!")
+        print("Scissors cuts paper \nPlayer 2 wins!")
     elif (PickPlayer1=="paper") & (PickPlayer2=="rock"):
-        print("Paper wraps Rock \nPlayer 1 wins!")
+        print("Paper covers Rock \nPlayer 1 wins!")
     elif (PickPlayer1=="scissors") & (PickPlayer2=="paper"):
-        print("Scissors cut paper \nPlayer 1 wins!")
+        print("Scissors cuts paper \nPlayer 1 wins!")
     elif (PickPlayer1=="scissors") & (PickPlayer2=="rock"):
-        print("Rock beats scissors \nPlayer 2 wins!")
+        print("Rock crushes scissors \nPlayer 2 wins!")
     else:
         print("You picked the same, Let's do it again!")
 
