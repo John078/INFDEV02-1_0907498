@@ -1,17 +1,17 @@
-#Zorgt ervoor dat random gebruikt kan worden
+﻿#Zorgt ervoor dat random gebruikt kan worden
 import random
 
 print("Welcome to the game Rock, Paper, Scissors, Lizard, Spock! \nFirst of all, you can choose between Rock, Paper, Scissors, Lizard or Spock.")
 
 #.Lower() zorgt ervoor dat hoe de gebruiker het invult het altijd kleine letters zijn
-PickPlayer1 = input("Which one do you pick?").lower()
+PickPlayer1 = raw_input("Which one do you pick?").lower()
 
 #PickPlayer1 moet overeenkomen met de te kiezen woorden
 if PickPlayer1 in ['rock', 'paper', 'scissors', 'lizard', 'spock']:
-    print("Player 1 picked", PickPlayer1)
+    print "Player 1 picked", PickPlayer1
 
     PickPlayer2 = random.choice(['rock', 'paper', 'scissors', 'lizard', 'spock'])
-    print("Player 2 picked",PickPlayer2)
+    print "Player 2 picked", PickPlayer2
 
     if (PickPlayer1=="rock") & (PickPlayer2=="paper"):
         print("Paper covers Rock \nPlayer 2 wins!")
