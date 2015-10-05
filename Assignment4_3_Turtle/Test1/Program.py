@@ -36,9 +36,9 @@ def Program():
     #                  PUT YOUR CODE BELOW
     #---------------------------------------------------------------------
     x =get()
-    def move(x):
+    def move(x): #definition of move for an 'x' value
 
-#Als x gelijk is aan getal dan voert hij datgene uit.
+#Als x gelijk is aan de letter van het getal dan voert hij datgene uit.
 #119=w, 97=a, 100=d, 115=s, 120=x
 
         if x is 119:
