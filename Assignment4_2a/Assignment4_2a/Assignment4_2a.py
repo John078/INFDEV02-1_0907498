@@ -1,4 +1,6 @@
-﻿print("Welcome to the game Rock, Paper, Scissors! \nFirst of all, you can choose between Rock, Paper and Scissors.")
+﻿#MULTIPLAYER
+
+print("Welcome to the game Rock, Paper, Scissors! \nFirst of all, you can choose between Rock, Paper and Scissors.")
 
 #.Lower() zorgt ervoor dat hoe de gebruiker het invult het altijd kleine letters zijn
 PickPlayer1 = raw_input("Player 1, Which one do you pick?").lower()
