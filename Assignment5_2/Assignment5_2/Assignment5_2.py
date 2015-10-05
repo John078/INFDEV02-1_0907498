@@ -18,11 +18,11 @@ if length_password:
         if uppercase_password: 
             if numbers_password:
                 if special_password:
-                    print "You're password is strong"
+                    print "You're password is strong"                   #je hebt ze allemaal nodig voor een sterk wachtwoord
                 else:
-                    print "You're password is medium"
+                    print "You're password is medium"                   #je moet alles hebben behalve een special character voor een medium wachtwoord
             else:
-                print "You're password is weak"
+                print "You're password is weak"                         #voor minder is je wachtwoord weak
         else:
             print "You're password is weak"
     else:
