@@ -39,7 +39,7 @@ def Program():
     def move(x):
 
 #Als x gelijk is aan getal dan voert hij datgene uit.
-#119=w, 97=a, 100=d, 115=s
+#119=w, 97=a, 100=d, 115=s, 120=x
 
         if x is 119:
             forward (5)
@@ -56,6 +56,19 @@ def Program():
             turn (180)
             change_color_to(Green)
             print("Turn around")
+        elif x is 120:
+            for i in range(41):             #41 times 
+                change_color_to(Black)
+                forward(10)
+                turn(123)
+            for i in range(41):
+                change_color_to(Blue)
+                forward(20)
+                turn(123)
+            for i in range(41):
+                change_color_to(Red)
+                forward(30)
+                turn(123)           
 
     move(x)
 
