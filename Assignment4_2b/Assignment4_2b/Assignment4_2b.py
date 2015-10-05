@@ -1,4 +1,6 @@
-﻿#Zorgt ervoor dat random gebruikt kan worden
+﻿#SINGLEPLAYER
+
+#Zorgt ervoor dat random gebruikt kan worden
 import random
 
 print("Welcome to the game Rock, Paper, Scissors, Lizard, Spock! \nFirst of all, you can choose between Rock, Paper, Scissors, Lizard or Spock.")
@@ -10,7 +12,7 @@ PickPlayer1 = raw_input("Which one do you pick?").lower()
 if PickPlayer1 in ['rock', 'paper', 'scissors', 'lizard', 'spock']:
     print "Player 1 picked", PickPlayer1
 
-    PickPlayer2 = random.choice(['rock', 'paper', 'scissors', 'lizard', 'spock'])
+    PickPlayer2 = random.choice(['rock', 'paper', 'scissors', 'lizard', 'spock']) #Player 2 is een random keuze uit de 5 keuzes door Random.choice
     print "Player 2 picked", PickPlayer2
 
     if (PickPlayer1=="rock") & (PickPlayer2=="paper"):
@@ -59,7 +61,7 @@ if PickPlayer1 in ['rock', 'paper', 'scissors', 'lizard', 'spock']:
         print("Lizard poisons Spock \nPlayer 2 wins!")
 
     else:
-        print("You picked the same, Let's do it again!")
+        print("You picked the same, Let's do it again!")    #als de waardes die hierboven staan niet voorkomen is er gelijk gekozen.
 
 #als de input niet gelijk is aan choice
 else:
