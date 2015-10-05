@@ -1,21 +1,32 @@
-﻿letter = raw_input("Type a letter: ")
+﻿
+import re
 
-print letter
-number = input("Type a number to shift in the alfabet: ")
-print "You want to shift the letter", letter,"with",number,"places"
+letters = raw_input("Which letters would u like to shift?")
+places = input("With how many places do you like to shift between 1 and 26?")
 
-for i in letter:
-    print ord(i)
+if places>= 1 and places<=26:
+    translated = ""
+    for i in letters: 
+        if i.isalpha():
+            number = ord(i)
+            number += places
+            if letters.isupper():
+                if number > ord('Z'):
+                    number -= 26
+                elif number > ord('A'):
+                    number += 26
+            elif letters.islower():
+                if number > ord('z'):
+                    number -= 26
+                elif number > ord('a'):
+                    number += 26
+            translated += chr(number)
+        else:
+            translated += i
 
-
-
-'''
-shift = (check+number)
-if shift <= 26:
-    print shift
-    result = alfabet[shift]
-    print "The new letter is now",result
 else:
-    print "The alphabet has only 26 characters"
+    print "You have to choose between 1 and 26"
 
-'''
+
+print(letters, places)
+
