@@ -12,7 +12,8 @@ headrow="*"*rows
 innerrow="*"+(rows-2)*" "+"*"
 newline="\n"
 innerpattern= (innerrow+newline)*(rows-2)
-print headrow + newline + innerpattern + headrow
+hallowsquare = headrow + newline + innerpattern + headrow
+print hallowsquare
 
 
 #driehoek maken
@@ -30,7 +31,6 @@ bottom = length + 1
 for x in range(1,bottom):
     print ((bottom-1)-x)*" " + " ".join(["*"]*x)
  
-
 #cirkel maken
 #for the amounts 11, 5, 5, 5 it works well.
 #r^2 = (x - a)^2 + (y - b)^2
