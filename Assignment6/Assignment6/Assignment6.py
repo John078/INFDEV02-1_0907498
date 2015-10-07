@@ -29,17 +29,19 @@ for x in range (1,bottom,1):
     print triangle
 
 
+
 #pyramide maken
 # aantal spaties + aantal x
 length = input("What is the length of the bottom line?")
 bottom = length + 1
-
-for i in range(1,bottom):                   #length +1 zorgt ervoor dat het nummer wat de gebruiker intypt ook echt het einde is.
-    for a in range(1,length-i+1):           #je pakt nu de range van 1 tot een getal dat steeds afneemt dus van 1 tot 6, 1 tot 5, 1 tot 4, etc.
-        print ' ',
-    for b in range(1,2*i):                  #je pakt nu de range van 1 tot 2, 1 tot 4, 1 tot 6, etc
-        print '*',
-    print 
+pyramide = ""
+for i in range(bottom):                   #length +1 zorgt ervoor dat het nummer wat de gebruiker intypt ook echt het einde is.
+    for b in range((length-i)+1):           #je pakt nu de range van 1 tot een getal dat steeds afneemt dus van 1 tot 6, 1 tot 5, 1 tot 4, etc.
+        pyramide +=  " "
+    for b in range((2*i)+1):                  #je pakt nu de range van 1 tot 2, 1 tot 4, 1 tot 6, etc
+        pyramide += "*"
+    pyramide += "\n"
+print pyramide
 
 
 #cirkel maken
@@ -58,4 +60,3 @@ for y in range(width):                                          #voer uit zodra 
  
 for line in map:                    #je moet de "map" lijn voor lijn bekijken en een " " ertussen printen zonder deze regels wordt er niks laten zien.
     print " ".join(line)
-
