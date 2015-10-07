@@ -1,5 +1,4 @@
 ﻿
-'''
 #square
 height = input("What is the height of the square?")
 square = ""
@@ -28,7 +27,7 @@ triangle = ""
 for x in range (1,bottom,1):
     triangle += "*"
     print triangle
-'''
+
 
 #pyramide maken
 # aantal spaties + aantal x
@@ -42,7 +41,6 @@ for i in range(1,bottom):                   #length +1 zorgt ervoor dat het numm
         print '*',
     print 
 
-'''
 
 #cirkel maken
 #r^2 = (x - a)^2 + (y - b)^2
@@ -61,4 +59,3 @@ for y in range(width):                                          #voer uit zodra 
 for line in map:                    #je moet de "map" lijn voor lijn bekijken en een " " ertussen printen zonder deze regels wordt er niks laten zien.
     print " ".join(line)
 
-'''
