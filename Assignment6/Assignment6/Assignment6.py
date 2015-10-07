@@ -31,7 +31,6 @@ bottom = length + 1
 for x in range(1,bottom):
     print ((bottom-1)-x)*" " + " ".join(["*"]*x)
 
-    width = input("What is the width/length of the background?")
 
 
 #cirkel maken
