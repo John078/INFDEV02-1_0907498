@@ -1,10 +1,10 @@
-﻿'''
+﻿
 #square
 height = input("What is the height of the square?")
 for x in range(height):
     for y in range(height):
         print "*"
-'''
+
 
 #hallow square
 rows = input("How many rows do you want?")
@@ -15,7 +15,6 @@ innerpattern= (innerrow+newline)*(rows-2)
 hallowsquare = headrow + newline + innerpattern + headrow
 print hallowsquare
 
-'''
 
 #triangle
 #start,stop,step
@@ -24,7 +23,6 @@ bottom = length + 1
 for x in range (1,bottom,1):
     print "*" * x
 
-'''
         
 #pyramide maken
 # aantal spaties + aantal x
@@ -35,7 +33,6 @@ for x in range(1,bottom):
 
     width = input("What is the width/length of the background?")
 
-'''
 
 #cirkel maken
 #r^2 = (x - a)^2 + (y - b)^2
@@ -54,4 +51,3 @@ for y in range(width):                                          #voer uit zodra 
 for line in map:                    #je moet de "map" lijn voor lijn bekijken en een " " ertussen printen zonder deze regels wordt er niks laten zien.
     print " ".join(line)
 
-'''
