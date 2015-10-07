@@ -47,8 +47,7 @@ for y in range(width):                                          #voer uit zodra 
         if abs((x-a)**2 + (y-b)**2)== radius**2:                #als de formule van de cirkel juist is, dan print je een *
               map[y][x] = "*"
 
-            
-
-for line in map:                    #je moet de "map" lijn voor lijn bekijken
+ 
+for line in map:                    #je moet de "map" lijn voor lijn bekijken en een " " ertussen printen. zonder deze regels wordt er niks laten zien.
     print " ".join(line)
 
