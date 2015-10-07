@@ -23,7 +23,7 @@ bottom = length + 1
 for x in range (1,bottom,1):
     print "*" * x
 
-
+        
 #pyramide maken
 # aantal spaties + aantal x
 length = input("What is the length of the bottom line?")
@@ -32,7 +32,7 @@ for x in range(1,bottom):
     print ((bottom-1)-x)*" " + " ".join(["*"]*x)
 
     width = input("What is the width/length of the background?")
-'''
+
 
 #cirkel maken
 #r^2 = (x - a)^2 + (y - b)^2
@@ -44,10 +44,12 @@ map = [[" " for x in range(width)] for y in range(width)]       #een waarde x mo
 
 for y in range(width):                                          #voer uit zodra y in de waarde range
     for x in range(width):                                      #voer uit zodra x in de waarde range
-        if abs((x-a)**2 + (y-b)**2)== radius**2:                #als de formule van de cirkel juist is, dan print je een *
+        if (x-a)**2 + (y-b)**2== radius**2:                     #als de formule van de cirkel juist is, dan print je een *
               map[y][x] = "*"
 
  
-for line in map:                    #je moet de "map" lijn voor lijn bekijken en een " " ertussen printen. zonder deze regels wordt er niks laten zien.
+for line in map:                    #je moet de "map" lijn voor lijn bekijken en een " " ertussen printen zonder deze regels wordt er niks laten zien.
     print " ".join(line)
 
+
+'''
