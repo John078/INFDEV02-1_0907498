@@ -1,2 +1,6 @@
 ﻿number = input("Give me a number..")
-print "The absolute number is" , abs(number)    #abs converts the number to an absolute number
+if number >= 0:
+    print "The absolute number is", number
+else:
+    number = number*-1
+    print "The absolute number is", number
