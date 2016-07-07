@@ -1,4 +1,6 @@
-﻿#square
+﻿'''
+
+#square
 height = input("What is the height of the square?")
 square = ""
 for x in range(height):
@@ -39,7 +41,7 @@ for x in range (1,bottom,1):
     triangle += "*"
     print triangle
 
-
+    '''
 
 #pyramide maken
 # aantal spaties + aantal x
@@ -52,7 +54,7 @@ for i in range(length):                   #length +1 zorgt ervoor dat het nummer
         pyramide += "*"
     pyramide += "\n"
 print pyramide
-
+'''
 
 
 #cirkel maken
@@ -75,3 +77,4 @@ if radius > 1:
 
 else:
     print "You're radius is too low for a circle"
+    '''
